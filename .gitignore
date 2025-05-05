@@ -1,0 +1,46 @@
+## Compilados de Visual Studio / .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+
+## Archivos de configuración de VS Code
+.vscode/
+.vs/
+
+## Archivos temporales de sistema
+*.DS_Store
+Thumbs.db
+
+## Archivos de paquetes NuGet
+*.nupkg
+*.snupkg
+packages/
+.nuget/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Configuración de usuario y entorno
+*.userprefs
+*.userosscache
+*.sln.docstates
+
+## Archivos de pruebas
+TestResults/
+*.coverage
+*.coveragexml
+*.testsettings
+*.runsettings
+
+## Archivos de seguridad y secrets
+secrets.json
+
+## Archivos del dotnet tool
+.dotnet-tools.json
+
+## Archivos de Rider (JetBrains)
+.idea/
+*.sln.iml
