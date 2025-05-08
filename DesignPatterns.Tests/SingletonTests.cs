@@ -1,5 +1,5 @@
-﻿using DesignPatterns.Creational.Singleton;
-using Xunit;
+﻿using Xunit;
+using DesignPatterns.Creational.Singleton;
 
 namespace DesignPatterns.Tests;
 
@@ -8,8 +8,8 @@ public class SingletonTests
     [Fact]
     public void Logger_ShouldBeSameInstance()
     {
-        var logger1 = Logger.Instance();
-        var logger2 = Logger.Instance();
+        var logger1 = Logger.Instance;
+        var logger2 = Logger.Instance;
         Assert.Same(logger1, logger2);
     }
 }
