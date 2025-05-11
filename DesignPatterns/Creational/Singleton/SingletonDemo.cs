@@ -12,5 +12,9 @@ public static class SingletonDemo
         loggerB.Log("Mensaje desde loggerB");
 
         Console.WriteLine($"¿Son la misma instancia? {ReferenceEquals(loggerA, loggerB)}");
+
+        var conn = DatabaseConnection.Instance.Connection;
+        conn.Open();
+        conn.Close();
     }
 }
