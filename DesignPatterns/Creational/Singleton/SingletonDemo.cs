@@ -13,8 +13,10 @@ public static class SingletonDemo
 
         Console.WriteLine($"¿Son la misma instancia? {ReferenceEquals(loggerA, loggerB)}");
 
+//muestra para el caso de una conexion con la base de datos global
         var conn = DatabaseConnection.Instance.Connection;
         conn.Open();
+        Console.WriteLine(conn.IsOpen);
         conn.Close();
     }
 }
