@@ -18,5 +18,11 @@ public static class SingletonDemo
         conn.Open();
         Console.WriteLine(conn.IsOpen);
         conn.Close();
+        
+
+        //themeManager
+        var theme = ThemeManager.Instance;
+        theme.ApplyDarkTheme();
+        Console.WriteLine(theme.IsDarkMode);
     }
 }
