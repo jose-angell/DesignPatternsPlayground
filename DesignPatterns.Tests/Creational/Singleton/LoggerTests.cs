@@ -2,9 +2,9 @@
 using DesignPatterns.Creational.Singleton;
 using System.IO;
 
-namespace DesignPatterns.Tests;
+namespace DesignPatterns.Tests.Creational.Singleton;
 
-public class SingletonTests
+public class LoggerTests
 {
     [Fact]
     public void Logger_ShouldBeSameInstance()
@@ -31,6 +31,7 @@ public class SingletonTests
     [Fact]
     public void Logger_Log_ShouldWriteToConsole()
     {
+         var originalOut = Console.Out;
         //Funcionalidad basica del logger
         //Redirige la salida de consola a un stringWriter temporal
         using var sw = new StringWriter();
@@ -43,17 +44,22 @@ public class SingletonTests
 
         var output = sw.ToString().Trim();
         Assert.Equal($"[LOG] {message}", output);
+        Console.SetOut(originalOut);
     }
 
     [Fact]
     public void Logger_ShouldBeUsableWithoutAnySetup()
     {
+         var originalOut = Console.Out;
+
         //Verifica que el acceso a Logger.Instance.Log(...) funciona sin necesidad de ninguna configuracion previa
         var exception = Record.Exception(() =>
         {
             Logger.Instance.Log("Message without prioo setup");
         });
         Assert.Null(exception); // NO debe lanzar exception
+        Console.SetOut(originalOut);
+
     }
     
     [Fact] 
@@ -69,6 +75,8 @@ public class SingletonTests
     [Fact]
     public void Logger_Log_ShouldHaveExpectedFormat()
     {
+         var originalOut = Console.Out;
+
         //Asegura que el log tenga el formato esperado
         using var sw = new StringWriter();
         Console.SetOut(sw);
@@ -77,6 +85,7 @@ public class SingletonTests
         var output = sw.ToString().Trim();
         Assert.StartsWith("[LOG]", output);
         Assert.Contains("Hello", output);
+        Console.SetOut(originalOut);
     }
     [Fact]
     public void Logger_Constructor_ShouldBePrivate()
