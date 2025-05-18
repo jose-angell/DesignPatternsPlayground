@@ -21,8 +21,11 @@ Este repositorio está diseñado como un entorno de práctica para implementar y
 
 ## 🧪 Ejecutar pruebas
 
-
+Ejecucion global de las prubas
 dotnet test
+
+Ejecucion unitaria de pruba
+dotnet test --filter NombredePrueba
 
 
 ## Ejecutar EL proyecto
