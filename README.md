@@ -14,6 +14,7 @@ Este repositorio está diseñado como un entorno de práctica para implementar y
 | Creational   | Singleton      | ✅ Implementado (`ThemeManager`)        |
 | Creational   | Factory Method | ✅ Implementado (`Truck`, `Ship`)       |
 | Creational   | Singleton      | ✅ Implementado (`TokenGenerator`)        |
+| Creational   | Factory Method | ✅ Implementado (`Notifications`)       |
 | Structural   | --             | 🔜 Pendiente                            |
 | Behavioral   | --             | 🔜 Pendiente                            |
 
