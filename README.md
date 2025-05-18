@@ -11,8 +11,9 @@ Este repositorio está diseñado como un entorno de práctica para implementar y
 |--------------|----------------|-----------------------------------------|
 | Creational   | Singleton      | ✅ Implementado (`Logger`)              |
 | Creational   | Singleton      | ✅ Implementado (`DatabaseConnection`)  |
-| Creational   | Singleton      | ✅ Implementado (`ThemeManager`)  |
+| Creational   | Singleton      | ✅ Implementado (`ThemeManager`)        |
 | Creational   | Factory Method | ✅ Implementado (`Truck`, `Ship`)       |
+| Creational   | Singleton      | ✅ Implementado (`TokenGenerator`)        |
 | Structural   | --             | 🔜 Pendiente                            |
 | Behavioral   | --             | 🔜 Pendiente                            |
 
