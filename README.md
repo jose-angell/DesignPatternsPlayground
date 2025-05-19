@@ -13,20 +13,20 @@ Este repositorio está diseñado como un entorno de práctica para implementar y
 | Creational   | Singleton      | ✅ Implementado (`DatabaseConnection`)  |
 | Creational   | Singleton      | ✅ Implementado (`ThemeManager`)        |
 | Creational   | Factory Method | ✅ Implementado (`Truck`, `Ship`)       |
-| Creational   | Singleton      | ✅ Implementado (`TokenGenerator`)        |
+| Creational   | Singleton      | ✅ Implementado (`TokenGenerator`)      |
 | Creational   | Factory Method | ✅ Implementado (`Notifications`)       |
 | Structural   | --             | 🔜 Pendiente                            |
-| Behavioral   | --             | 🔜 Pendiente                            |
+| Behavioral   | Observer       | ✅ Implementado (`WeatherStation`)       |
 
 ---
 
 ## 🧪 Ejecutar pruebas
 
 Ejecucion global de las prubas
-dotnet test 
+`dotnet test`
 
 Ejecucion unitaria de pruba
-dotnet test --filter NombredePrueba
+`dotnet test --filter NombredePrueba`
 
 
 ## Ejecutar EL proyecto
