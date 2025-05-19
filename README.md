@@ -16,7 +16,8 @@ Este repositorio está diseñado como un entorno de práctica para implementar y
 | Creational   | Singleton      | ✅ Implementado (`TokenGenerator`)      |
 | Creational   | Factory Method | ✅ Implementado (`Notifications`)       |
 | Structural   | --             | 🔜 Pendiente                            |
-| Behavioral   | Observer       | ✅ Implementado (`WeatherStation`)       |
+| Behavioral   | Observer       | ✅ Implementado (`WeatherStation`)      |
+| Behavioral   | Observer       | ✅ Implementado (`NewsAgenc`)           |
 
 ---
 
